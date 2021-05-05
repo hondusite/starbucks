@@ -4,81 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starbucks</title>
+    <title>starbucks</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
- }
- .logo, nav{
-     display: inline-block;
- } 
- .logo{
-     width:25% ;
- }
- .logo img{
-     width: 80px;
-     height: auto;
-     vertical-align: middle;
- }
- nav{
-     width:70% ;
-     text-align: right;
- }
- nav a{
-     display: inline-block;
-     text-decoration: none;
-     padding:10px 25px;
-     color:black;
-     font-weight: bold;
- }
- nav a:hover{
-     background-color:#006641 ;
-     border-radius: 25px;
-     color:white;
- }
- .text, .product{
-     display: inline-block;
-     padding:20px;
-     width: 47%;
- }
- .text h1{
-     font-size: 3.5em;
- }
- .text h1 .resaltado{
-     color:#006641;
- }
- .text p{
-     font-size: 1.1em;
-     line-height: 1.5;
- }
- .call-action{
-     text-decoration: none;
-     display: inline-block;
-     padding: 10px 25px;
-     color:white;
-     background-color:#006641 ;
-     font-weight: bold;
-     border-radius: 25px;
-     margin-top:30px;
- }
- .product{
-     background-image: url('img/circulo.png');
-     background-repeat: no-repeat;
-     background-position: 50px 200px
- }
- .product img{
-    width: 80%;
-    height: auto;
- }
-</style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        .header{
+            height: 10vh;
+        }
+        .logo, nav{
+            display: inline-block;
+        }
+        .logo{
+            width: 20%;
+        }
+        nav{
+            width: 70%;
+            text-align: right;
+        }
+        .logo img{
+            height: 9vh;
+            margin:5px 15px;
+            vertical-align: middle;
+        }
+        nav a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 15px;
+            color:black;
+            font-weight: bold;
+            margin:0 10px;
+        }
+        nav a:hover{
+            color:white;
+            background-color:#006641 ;
+            border-radius: 25px;
+        }
+        .contenido{
+            width: 100vw;
+            height: 90vh;
+            background-image: url('img/circulo.png');
+            background-repeat: no-repeat;
+            background-position:500px 200px;
+        }
+        .texto, .imagen{
+            display: inline-block;
+            width: 47%;
+            padding: 5px 20px;
+        }
+        .texto h1{
+            font-size: 3.5em;
+            margin-bottom: 25px;
+        }
+        .texto h1 .resaltado{
+            color:#006641 ;
+        }
+        .call-action{
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #006641;
+            color:white;
+            text-decoration:none;
+            border-radius: 25px;
+            margin-top:20px;
+        }
+        .imagen img{
+            width: 90%;
+            height: auto;
+            filter:drop-shadow(5px 5px 20px rgba(0,0,0,0.8));
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="header">
         <div class="logo">
             <img src="img/logo.png">
         </div>
@@ -88,15 +91,15 @@
             <a href="#">What´s new</a>
             <a href="#">Contact</a>
         </nav>
-    </header>
-    <div class="main">
-        <div class="text">
+    </div>
+    <div class="contenido">
+        <div class="texto">
             <h1>It´s not just coffee<br>
                 it´s <span class="resaltado">Starbucks</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga facere aliquam ad deleniti animi, ea rerum modi, hic incidunt dolore quas qui vero impedit quibusdam. Atque possimus ipsa adipisci explicabo, voluptas quos maiores in cum deleniti obcaecati reiciendis numquam laudantium et temporibus fugiat, omnis corrupti dolore quam asperiores repellat pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis doloribus amet quas aliquid suscipit deleniti, iure ut assumenda sint dicta minima nulla ab et ratione quis velit. Earum unde temporibus officia ipsa dolorum voluptate, eaque enim velit necessitatibus, eum nobis ut quos, dolorem laudantium facilis harum blanditiis voluptatum odit.</p>
             <a href="#" class="call-action">LEARN MORE</a>
         </div>
-        <div class="product">
+        <div class="imagen">
             <img src="img/vaso.PNG">
         </div>
     </div>
