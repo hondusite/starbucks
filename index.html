@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+ .logo, nav{
+     display: inline-block;
+ } 
+ .logo{
+     width:25% ;
+ }
+ .logo img{
+     width: 80px;
+     height: auto;
+     vertical-align: middle;
+ }
+ nav{
+     width:70% ;
+     text-align: right;
+ }
+ nav a{
+     display: inline-block;
+     text-decoration: none;
+     padding:10px 25px;
+     color:black;
+     font-weight: bold;
+ }
+ nav a:hover{
+     background-color:#006641 ;
+     border-radius: 25px;
+     color:white;
+ }
+ .text, .product{
+     display: inline-block;
+     padding:20px;
+     width: 47%;
+ }
+ .text h1{
+     font-size: 3.5em;
+ }
+ .text h1 .resaltado{
+     color:#006641;
+ }
+ .text p{
+     font-size: 1.1em;
+     line-height: 1.5;
+ }
+ .call-action{
+     text-decoration: none;
+     display: inline-block;
+     padding: 10px 25px;
+     color:white;
+     background-color:#006641 ;
+     font-weight: bold;
+     border-radius: 25px;
+     margin-top:30px;
+ }
+ .product{
+     background-image: url('img/circulo.png');
+     background-repeat: no-repeat;
+     background-position: 50px 200px
+ }
+ .product img{
+    width: 80%;
+    height: auto;
+ }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png">
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">What´s new</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="text">
+            <h1>It´s not just coffee<br>
+                it´s <span class="resaltado">Starbucks</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga facere aliquam ad deleniti animi, ea rerum modi, hic incidunt dolore quas qui vero impedit quibusdam. Atque possimus ipsa adipisci explicabo, voluptas quos maiores in cum deleniti obcaecati reiciendis numquam laudantium et temporibus fugiat, omnis corrupti dolore quam asperiores repellat pariatur.</p>
+            <a href="#" class="call-action">LEARN MORE</a>
+        </div>
+        <div class="product">
+            <img src="img/vaso.PNG">
+        </div>
+    </div>
+</body>
+</html>
