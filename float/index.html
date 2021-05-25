@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout con float</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+        /*header*/
+        .header{
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+        }
+        .header h1{
+            font-size: 50px;
+        }
+        /*navegacion*/
+        .nav{
+            background-color: #333;
+            overflow: hidden;
+        }
+        .nav a{
+            float: left;
+            display: block;
+            color:#f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .nav a:hover{
+            background-color: #ddd;
+            color:black;
+        }
+        /*columnas*/
+        /*columna izquierda*/
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            background-color: #f1f1f1;
+            padding-left: 20px;
+        }
+        /*fake img*/
+        .fakeimg{
+            background-color: #aaa;
+            width: 100%;
+            padding:20px;
+        }
+        /*tarjetas card*/
+        .card{
+            background-color: white;
+            padding:20px;
+            margin-top:20px;
+        }
+        /*cerrar al float*/
+        .clear{
+            display:table;
+            clear: both;
+        }
+        /*pie de pagina*/
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: #ddd;
+            margin-top: 20px;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mi Página Web</h1>
+        <p>Redimensione la pantalla para ver el efecto</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link1</a>
+        <a href="#">Link2</a>
+        <a href="#">Link3</a>
+        <a href="#" style="float:right;">Link4</a>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Título de la tarjeta</h2>
+                <h5>Descripción, Mayo 25, 2021</h5>
+                <div class="fakeimg" style="height: 200px;">imagen</div>
+                <p>Algo de texto..</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit accusantium quidem voluptas, amet nam ex odit? Modi officia, possimus assumenda, impedit corrupti a, maiores dolorum ratione numquam aliquam iusto.</p>
+            </div>
+            <div class="card">
+                <h2>Título de la tarjeta</h2>
+                <h5>Descripción, Mayo 25, 2021</h5>
+                <div class="fakeimg" style="height: 200px;">imagen</div>
+                <p>Algo de texto..</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sit accusantium quidem voluptas, amet nam ex odit? Modi officia, possimus assumenda, impedit corrupti a, maiores dolorum ratione numquam aliquam iusto.</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>Acerca de mi</h2>
+                <div class="fakeimg" style="height: 100px;">Imagen</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non fugiat pariatur facilis possimus omnis odit optio! Consectetur, praesentium ab.</p>
+            </div>
+            <div class="card">
+                <h3>Post populares</h3>
+                <div class="fakeimg"><p>Imagen</p></div>
+                <div class="fakeimg"><p>Imagen</p></div>
+                <div class="fakeimg"><p>Imagen</p></div>
+            </div>
+            <div class="card">
+                <h3>Sígueme</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="footer">
+        <h2>Pie de página</h2>
+    </div>
+</body>
+</html>
